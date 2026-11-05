@@ -15,7 +15,7 @@ export default function App() {
         setData: setBooks,
         loading, 
         error 
-    } = useFetch("http://localhost:4000/api/books?delay=2000", [], []);
+    } = useFetch("http://localhost:4000/api/books", [], []);
 
     const [reloads, setReloads] = useState(0);
     const [selectedId, setSelectedId] = useState("b2");
