@@ -5,20 +5,18 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './pages/Home.jsx'
 import App from './App.jsx'
 import About from './pages/About.jsx'
-import Header from './layout/Header.jsx'
+import Layout from './layout/Layout.jsx'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <BrowserRouter>
-            <div className="app">
-                <Header />
-
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/books" element={<App />} />
-                    <Route path="/about" element={<About />} />
-                </Routes>
-            </div>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route path="home" element={<Home />} />
+                    <Route path="books" element={<App />} />
+                    <Route path="about" element={<About />} />
+                </Route>
+            </Routes>
         </BrowserRouter>
-    </StrictMode>,
+    </StrictMode>, 
 )

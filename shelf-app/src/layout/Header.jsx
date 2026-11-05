@@ -14,11 +14,13 @@ export default function Header() {
             
             <nav>
                 <ul>
-                    <li className="nav-item"><Link to="/">Home</Link></li>
+                    <li className="nav-item"><Link to="/home">Home</Link></li>
                     <li className="nav-item"><Link to="/books">Shelf</Link></li>
                     <li className="nav-item"><Link to="/about">About</Link></li>
                 </ul>
             </nav>
+            <p>Bottom of header</p>
+            <hr />
         </>
     )
 }

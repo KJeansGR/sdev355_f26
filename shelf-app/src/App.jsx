@@ -79,8 +79,6 @@ export default function App() {
                 {cards("Want to read", wishlist)}
                 {cards("Finished reading", finishedReading)}
             </BookShelf>
-
-            <Footer></Footer>
         </>
     )
 }
