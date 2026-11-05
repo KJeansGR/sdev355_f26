@@ -1,13 +1,13 @@
-import Header from "./layout/Header.jsx"
-import Footer from "./layout/Footer.jsx"
-import BookCard from "./components/BookCard"
-import Panel from "./components/Panel"
-import Search from "./components/Search"
-import AddForm from './components/AddForm'
-import BookShelf from "./components/BookShelf"
-import BookDetail from './components/BookDetail'
+import Header from "../layout/Header.jsx"
+import Footer from "../layout/Footer.jsx"
+import BookCard from "../components/BookCard.jsx"
+import Panel from "../components/Panel.jsx"
+import Search from "../components/Search.jsx"
+import AddForm from '../components/AddForm.jsx'
+import BookShelf from "../components/BookShelf.jsx"
+import BookDetail from '../components/BookDetail.jsx'
 import { useState } from 'react'
-import { useFetch, useDebounce } from './hooks/hooks.js';
+import { useFetch, useDebounce } from '../hooks/hooks.js';
 
 export default function App() {
     const { 
