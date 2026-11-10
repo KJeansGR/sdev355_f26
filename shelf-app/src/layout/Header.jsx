@@ -17,6 +17,9 @@ export default function Header() {
                     <li className="nav-item"><Link to="/home">Home</Link></li>
                     <li className="nav-item"><Link to="/books">Shelf</Link></li>
                     <li className="nav-item"><Link to="/about">About</Link></li>
+                    <li className="nav-item"><Link to="/books/finished">Finished</Link></li>
+                    <li className="nav-item"><Link to="/books/want">Want</Link></li>
+
                 </ul>
             </nav>
             <p>Bottom of header</p>
