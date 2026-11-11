@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useContext } from "react";
 
 import { API } from "../api.js";
 import { useFetch } from "../hooks/useFetch.js";
@@ -10,15 +10,19 @@ import NowReading from "./NowReading.jsx";
 import SearchBox from "./SearchBox.jsx";
 import AddBook from "./AddBook.jsx";
 import ShelfBody from "./ShelfBody.jsx";
+import { BookContext } from "../context/BookProvider.jsx";
 
 function Shelf() {
-  const {
-    data: books,
-    setData: setBooks,
-    loading,
-    error,
-    retry,
-  } = useFetch(API, []);
+
+  const {books ,setBooks, loading,error,retry } = useContext(BookContext);
+  
+  // const {
+  //   data: books,
+  //   setData: setBooks,
+  //   loading,
+  //   error,
+  //   retry,
+  // } = useFetch(API, []);
 
   const [hideFinished, setHideFinished] = useState(false);
   const [query, setQuery] = useState("");
